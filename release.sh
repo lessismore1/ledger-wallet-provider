@@ -2,9 +2,9 @@
 
 git checkout releases
 git reset --hard master
-babel ./src -d .
+npm run build
 rm -rf src
-git add .
+git add -f lib
 git commit -m 'Release build'
 git push -f
 git checkout master
